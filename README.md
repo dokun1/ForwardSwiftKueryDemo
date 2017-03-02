@@ -10,6 +10,6 @@ The database you access and the username are variable in the Kuery Demo.
 
 The table that you should have loaded into your db looks like so:
 
-[dbTable](Assets/kueryTable.png)
+![dbTable](Assets/kueryTable.png)
 
 For more info and examples of queries you can run, check out the repo for Kuery [here](https://github.com/IBM-Swift/Swift-Kuery).
