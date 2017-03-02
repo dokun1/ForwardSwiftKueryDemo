@@ -4,7 +4,7 @@ This is the code repo for the Kuery demo I performed on stage at ForwardSwift in
 
 ## How-to
 
-You must have PostgreSQL running on your local machine, and you need to have it available on port 5432.
+You must have PostgreSQL running on your local machine, and you need to have it available on port 5432. You also must run `swift build` in the root directory of this repo to pull down the requisite dependencies.
 
 The database you access and the username are variable in the Kuery Demo.
 
