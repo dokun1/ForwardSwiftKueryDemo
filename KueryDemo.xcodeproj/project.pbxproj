@@ -1,0 +1,664 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		OBJ_100 /* Union.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Union.swift */; };
+		OBJ_101 /* Update.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Update.swift */; };
+		OBJ_102 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Utils.swift */; };
+		OBJ_103 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* With.swift */; };
+		OBJ_110 /* ConnectionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ConnectionOptions.swift */; };
+		OBJ_111 /* PostgreSQLConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* PostgreSQLConnection.swift */; };
+		OBJ_112 /* PostgreSQLResultFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* PostgreSQLResultFetcher.swift */; };
+		OBJ_113 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Utils.swift */; };
+		OBJ_115 /* SwiftKuery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* SwiftKuery.framework */; };
+		OBJ_122 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* main.swift */; };
+		OBJ_124 /* SwiftKuery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* SwiftKuery.framework */; };
+		OBJ_125 /* SwiftKueryPostgreSQL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* SwiftKueryPostgreSQL.framework */; };
+		OBJ_65 /* AggregateColumnExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AggregateColumnExpression.swift */; };
+		OBJ_66 /* AuxiliaryTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AuxiliaryTable.swift */; };
+		OBJ_67 /* Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Buildable.swift */; };
+		OBJ_68 /* Column.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Column.swift */; };
+		OBJ_69 /* ColumnAndExpressions_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* ColumnAndExpressions_Extensions.swift */; };
+		OBJ_70 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Condition.swift */; };
+		OBJ_71 /* ConditionalClause.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* ConditionalClause.swift */; };
+		OBJ_72 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Connection.swift */; };
+		OBJ_73 /* Delete.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Delete.swift */; };
+		OBJ_74 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Field.swift */; };
+		OBJ_75 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Filter.swift */; };
+		OBJ_76 /* FilterAndHaving_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* FilterAndHaving_Extensions.swift */; };
+		OBJ_77 /* FilterAndHaving_GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* FilterAndHaving_GlobalFunctions.swift */; };
+		OBJ_78 /* Having.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Having.swift */; };
+		OBJ_79 /* Insert.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Insert.swift */; };
+		OBJ_80 /* Join.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Join.swift */; };
+		OBJ_81 /* OrderBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* OrderBy.swift */; };
+		OBJ_82 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* Parameter.swift */; };
+		OBJ_83 /* Predicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Predicate.swift */; };
+		OBJ_84 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Query.swift */; };
+		OBJ_85 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* QueryBuilder.swift */; };
+		OBJ_86 /* QueryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* QueryError.swift */; };
+		OBJ_87 /* QueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* QueryResult.swift */; };
+		OBJ_88 /* QuerySuffixProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* QuerySuffixProtocol.swift */; };
+		OBJ_89 /* Raw.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Raw.swift */; };
+		OBJ_90 /* RawField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* RawField.swift */; };
+		OBJ_91 /* ResultFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* ResultFetcher.swift */; };
+		OBJ_92 /* ResultSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ResultSet.swift */; };
+		OBJ_93 /* RowSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* RowSequence.swift */; };
+		OBJ_94 /* ScalarColumnExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ScalarColumnExpression.swift */; };
+		OBJ_95 /* Select.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Select.swift */; };
+		OBJ_96 /* SpecialOperators_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* SpecialOperators_Extensions.swift */; };
+		OBJ_97 /* String+Buildable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* String+Buildable.swift */; };
+		OBJ_98 /* Subqueries_GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Subqueries_GlobalFunctionsAndExtensions.swift */; };
+		OBJ_99 /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Table.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5372ABD81E688F71002D7091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_60;
+			remoteInfo = SwiftKuery;
+		};
+		5372ABD91E688F71002D7091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_60;
+			remoteInfo = SwiftKuery;
+		};
+		5372ABDA1E688F71002D7091 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_105;
+			remoteInfo = SwiftKueryPostgreSQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		OBJ_10 /* AuxiliaryTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryTable.swift; sourceTree = "<group>"; };
+		OBJ_11 /* Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buildable.swift; sourceTree = "<group>"; };
+		OBJ_12 /* Column.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Column.swift; sourceTree = "<group>"; };
+		OBJ_13 /* ColumnAndExpressions_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColumnAndExpressions_Extensions.swift; sourceTree = "<group>"; };
+		OBJ_14 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		OBJ_15 /* ConditionalClause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalClause.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delete.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		OBJ_20 /* FilterAndHaving_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAndHaving_Extensions.swift; sourceTree = "<group>"; };
+		OBJ_21 /* FilterAndHaving_GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterAndHaving_GlobalFunctions.swift; sourceTree = "<group>"; };
+		OBJ_22 /* Having.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Having.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Insert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insert.swift; sourceTree = "<group>"; };
+		OBJ_24 /* Join.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join.swift; sourceTree = "<group>"; };
+		OBJ_25 /* OrderBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBy.swift; sourceTree = "<group>"; };
+		OBJ_26 /* Parameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameter.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Predicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predicate.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		OBJ_29 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		OBJ_30 /* QueryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryError.swift; sourceTree = "<group>"; };
+		OBJ_31 /* QueryResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResult.swift; sourceTree = "<group>"; };
+		OBJ_32 /* QuerySuffixProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuerySuffixProtocol.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Raw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raw.swift; sourceTree = "<group>"; };
+		OBJ_34 /* RawField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawField.swift; sourceTree = "<group>"; };
+		OBJ_35 /* ResultFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFetcher.swift; sourceTree = "<group>"; };
+		OBJ_36 /* ResultSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultSet.swift; sourceTree = "<group>"; };
+		OBJ_37 /* RowSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowSequence.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ScalarColumnExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScalarColumnExpression.swift; sourceTree = "<group>"; };
+		OBJ_39 /* Select.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Select.swift; sourceTree = "<group>"; };
+		OBJ_40 /* SpecialOperators_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialOperators_Extensions.swift; sourceTree = "<group>"; };
+		OBJ_41 /* String+Buildable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Buildable.swift"; sourceTree = "<group>"; };
+		OBJ_42 /* Subqueries_GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subqueries_GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Union.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Union.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Update.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		OBJ_47 /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		OBJ_49 /* ConnectionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionOptions.swift; sourceTree = "<group>"; };
+		OBJ_50 /* PostgreSQLConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostgreSQLConnection.swift; sourceTree = "<group>"; };
+		OBJ_51 /* PostgreSQLResultFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostgreSQLResultFetcher.swift; sourceTree = "<group>"; };
+		OBJ_52 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		OBJ_54 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		OBJ_57 /* SwiftKuery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKuery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_58 /* SwiftKueryPostgreSQL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftKueryPostgreSQL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_59 /* KueryDemo */ = {isa = PBXFileReference; lastKnownFileType = text; path = KueryDemo; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AggregateColumnExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AggregateColumnExpression.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_115 /* SwiftKuery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_123 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_124 /* SwiftKuery.framework in Frameworks */,
+				OBJ_125 /* SwiftKueryPostgreSQL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_48 /* SwiftKueryPostgreSQL */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_49 /* ConnectionOptions.swift */,
+				OBJ_50 /* PostgreSQLConnection.swift */,
+				OBJ_51 /* PostgreSQLResultFetcher.swift */,
+				OBJ_52 /* Utils.swift */,
+			);
+			name = SwiftKueryPostgreSQL;
+			path = "Packages/SwiftKueryPostgreSQL-0.6.0/Sources/SwiftKueryPostgreSQL";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_55 /* Tests */,
+				OBJ_56 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* KueryDemo */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_54 /* main.swift */,
+			);
+			name = KueryDemo;
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_55 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		OBJ_56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_57 /* SwiftKuery.framework */,
+				OBJ_58 /* SwiftKueryPostgreSQL.framework */,
+				OBJ_59 /* KueryDemo */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SwiftKuery */,
+				OBJ_48 /* SwiftKueryPostgreSQL */,
+				OBJ_53 /* KueryDemo */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		OBJ_8 /* SwiftKuery */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AggregateColumnExpression.swift */,
+				OBJ_10 /* AuxiliaryTable.swift */,
+				OBJ_11 /* Buildable.swift */,
+				OBJ_12 /* Column.swift */,
+				OBJ_13 /* ColumnAndExpressions_Extensions.swift */,
+				OBJ_14 /* Condition.swift */,
+				OBJ_15 /* ConditionalClause.swift */,
+				OBJ_16 /* Connection.swift */,
+				OBJ_17 /* Delete.swift */,
+				OBJ_18 /* Field.swift */,
+				OBJ_19 /* Filter.swift */,
+				OBJ_20 /* FilterAndHaving_Extensions.swift */,
+				OBJ_21 /* FilterAndHaving_GlobalFunctions.swift */,
+				OBJ_22 /* Having.swift */,
+				OBJ_23 /* Insert.swift */,
+				OBJ_24 /* Join.swift */,
+				OBJ_25 /* OrderBy.swift */,
+				OBJ_26 /* Parameter.swift */,
+				OBJ_27 /* Predicate.swift */,
+				OBJ_28 /* Query.swift */,
+				OBJ_29 /* QueryBuilder.swift */,
+				OBJ_30 /* QueryError.swift */,
+				OBJ_31 /* QueryResult.swift */,
+				OBJ_32 /* QuerySuffixProtocol.swift */,
+				OBJ_33 /* Raw.swift */,
+				OBJ_34 /* RawField.swift */,
+				OBJ_35 /* ResultFetcher.swift */,
+				OBJ_36 /* ResultSet.swift */,
+				OBJ_37 /* RowSequence.swift */,
+				OBJ_38 /* ScalarColumnExpression.swift */,
+				OBJ_39 /* Select.swift */,
+				OBJ_40 /* SpecialOperators_Extensions.swift */,
+				OBJ_41 /* String+Buildable.swift */,
+				OBJ_42 /* Subqueries_GlobalFunctionsAndExtensions.swift */,
+				OBJ_43 /* Table.swift */,
+				OBJ_44 /* Union.swift */,
+				OBJ_45 /* Update.swift */,
+				OBJ_46 /* Utils.swift */,
+				OBJ_47 /* With.swift */,
+			);
+			name = SwiftKuery;
+			path = "Packages/SwiftKuery-0.7.0/Sources/SwiftKuery";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		OBJ_105 /* SwiftKueryPostgreSQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_106 /* Build configuration list for PBXNativeTarget "SwiftKueryPostgreSQL" */;
+			buildPhases = (
+				OBJ_109 /* Sources */,
+				OBJ_114 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_116 /* PBXTargetDependency */,
+			);
+			name = SwiftKueryPostgreSQL;
+			productName = SwiftKueryPostgreSQL;
+			productReference = OBJ_58 /* SwiftKueryPostgreSQL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_117 /* KueryDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_118 /* Build configuration list for PBXNativeTarget "KueryDemo" */;
+			buildPhases = (
+				OBJ_121 /* Sources */,
+				OBJ_123 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_126 /* PBXTargetDependency */,
+				OBJ_127 /* PBXTargetDependency */,
+			);
+			name = KueryDemo;
+			productName = KueryDemo;
+			productReference = OBJ_59 /* KueryDemo */;
+			productType = "com.apple.product-type.tool";
+		};
+		OBJ_60 /* SwiftKuery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "SwiftKuery" */;
+			buildPhases = (
+				OBJ_64 /* Sources */,
+				OBJ_104 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKuery;
+			productName = SwiftKuery;
+			productReference = OBJ_57 /* SwiftKuery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "KueryDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				OBJ_60 /* SwiftKuery */,
+				OBJ_105 /* SwiftKueryPostgreSQL */,
+				OBJ_117 /* KueryDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_109 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_110 /* ConnectionOptions.swift in Sources */,
+				OBJ_111 /* PostgreSQLConnection.swift in Sources */,
+				OBJ_112 /* PostgreSQLResultFetcher.swift in Sources */,
+				OBJ_113 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_121 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_122 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_65 /* AggregateColumnExpression.swift in Sources */,
+				OBJ_66 /* AuxiliaryTable.swift in Sources */,
+				OBJ_67 /* Buildable.swift in Sources */,
+				OBJ_68 /* Column.swift in Sources */,
+				OBJ_69 /* ColumnAndExpressions_Extensions.swift in Sources */,
+				OBJ_70 /* Condition.swift in Sources */,
+				OBJ_71 /* ConditionalClause.swift in Sources */,
+				OBJ_72 /* Connection.swift in Sources */,
+				OBJ_73 /* Delete.swift in Sources */,
+				OBJ_74 /* Field.swift in Sources */,
+				OBJ_75 /* Filter.swift in Sources */,
+				OBJ_76 /* FilterAndHaving_Extensions.swift in Sources */,
+				OBJ_77 /* FilterAndHaving_GlobalFunctions.swift in Sources */,
+				OBJ_78 /* Having.swift in Sources */,
+				OBJ_79 /* Insert.swift in Sources */,
+				OBJ_80 /* Join.swift in Sources */,
+				OBJ_81 /* OrderBy.swift in Sources */,
+				OBJ_82 /* Parameter.swift in Sources */,
+				OBJ_83 /* Predicate.swift in Sources */,
+				OBJ_84 /* Query.swift in Sources */,
+				OBJ_85 /* QueryBuilder.swift in Sources */,
+				OBJ_86 /* QueryError.swift in Sources */,
+				OBJ_87 /* QueryResult.swift in Sources */,
+				OBJ_88 /* QuerySuffixProtocol.swift in Sources */,
+				OBJ_89 /* Raw.swift in Sources */,
+				OBJ_90 /* RawField.swift in Sources */,
+				OBJ_91 /* ResultFetcher.swift in Sources */,
+				OBJ_92 /* ResultSet.swift in Sources */,
+				OBJ_93 /* RowSequence.swift in Sources */,
+				OBJ_94 /* ScalarColumnExpression.swift in Sources */,
+				OBJ_95 /* Select.swift in Sources */,
+				OBJ_96 /* SpecialOperators_Extensions.swift in Sources */,
+				OBJ_97 /* String+Buildable.swift in Sources */,
+				OBJ_98 /* Subqueries_GlobalFunctionsAndExtensions.swift in Sources */,
+				OBJ_99 /* Table.swift in Sources */,
+				OBJ_100 /* Union.swift in Sources */,
+				OBJ_101 /* Update.swift in Sources */,
+				OBJ_102 /* Utils.swift in Sources */,
+				OBJ_103 /* With.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_60 /* SwiftKuery */;
+			targetProxy = 5372ABD81E688F71002D7091 /* PBXContainerItemProxy */;
+		};
+		OBJ_126 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_60 /* SwiftKuery */;
+			targetProxy = 5372ABD91E688F71002D7091 /* PBXContainerItemProxy */;
+		};
+		OBJ_127 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_105 /* SwiftKueryPostgreSQL */;
+			targetProxy = 5372ABDA1E688F71002D7091 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_107 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/CLibpq-0.1.1",
+				);
+				INFOPLIST_FILE = KueryDemo.xcodeproj/SwiftKueryPostgreSQL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lpq",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/postgresql/9.6.2/include";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftKueryPostgreSQL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SwiftKueryPostgreSQL;
+			};
+			name = Debug;
+		};
+		OBJ_108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/CLibpq-0.1.1",
+				);
+				INFOPLIST_FILE = KueryDemo.xcodeproj/SwiftKueryPostgreSQL_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lpq",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/postgresql/9.6.2/include";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftKueryPostgreSQL;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SwiftKueryPostgreSQL;
+			};
+			name = Release;
+		};
+		OBJ_119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/CLibpq-0.1.1",
+				);
+				INFOPLIST_FILE = KueryDemo.xcodeproj/KueryDemo_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lpq",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/postgresql/9.6.2/include";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = KueryDemo;
+			};
+			name = Debug;
+		};
+		OBJ_120 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"Packages/CLibpq-0.1.1",
+				);
+				INFOPLIST_FILE = KueryDemo.xcodeproj/KueryDemo_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx @executable_path";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-L/usr/local/lib",
+					"-lpq",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/postgresql/9.6.2/include";
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				TARGET_NAME = KueryDemo;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KueryDemo.xcodeproj/SwiftKuery_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftKuery;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SwiftKuery;
+			};
+			name = Debug;
+		};
+		OBJ_63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = KueryDemo.xcodeproj/SwiftKuery_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftKuery;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				TARGET_NAME = SwiftKuery;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_106 /* Build configuration list for PBXNativeTarget "SwiftKueryPostgreSQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_107 /* Debug */,
+				OBJ_108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_118 /* Build configuration list for PBXNativeTarget "KueryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_119 /* Debug */,
+				OBJ_120 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "KueryDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_61 /* Build configuration list for PBXNativeTarget "SwiftKuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_62 /* Debug */,
+				OBJ_63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}

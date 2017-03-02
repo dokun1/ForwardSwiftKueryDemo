@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B31025A1534B9F10B8A23A51B305F5D085BD5D26",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "181AF21E1335D5FC7EABC7D86E037AD32FF7958E" : 9223372036854775807,
+    "B31025A1534B9F10B8A23A51B305F5D085BD5D26" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48EF4231-62F4-4FF9-987F-3AA0A4A7F795",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "181AF21E1335D5FC7EABC7D86E037AD32FF7958E" : "ForwardSwiftKueryDemo\/Packages\/SwiftKuery-0.7.0\/",
+    "B31025A1534B9F10B8A23A51B305F5D085BD5D26" : "ForwardSwiftKueryDemo\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KueryDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KueryDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/IBM-Swift\/Swift-Kuery.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "181AF21E1335D5FC7EABC7D86E037AD32FF7958E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:dokun1\/ForwardSwiftKueryDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B31025A1534B9F10B8A23A51B305F5D085BD5D26"
+    }
+  ]
+}
